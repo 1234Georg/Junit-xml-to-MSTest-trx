@@ -14,7 +14,7 @@ _Generate Chutzpah.3.2.2 JavaScript test report_
 ></exec>
 >  ```
 
-_Convert the test report to trx format using [MSXL.exe](http://www.microsoft.com/en-us/download/details.aspx?id=21714) and the transformation file xslt_Junit_MsUnit included in this repo_
+_Convert the test report to trx format using [MSXL.exe](http://www.microsoft.com/en-us/download/details.aspx?id=21714) and the transformation file [xslt_Junit_MsUnit](https://github.com/harip/Junit-xml-to-MSTest-trx/blob/master/xslt_Junit_MsUnit) included in this repo_
 >  ```xml
 ><exec>
 >  <executable>C:\msxsl.exe</executable>
