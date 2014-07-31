@@ -1,5 +1,6 @@
 Junit-xml-to-MSTest-trx
 =======================
+Transformation file created by editing FL_junit_trx.xslt_BuildExtensions90 that came with [MSXL.exe](http://www.microsoft.com/en-us/download/details.aspx?id=21714)
 
 Merge Chutzpah.3.2.2 JavaScript test report with MsTest report using CruiseControl.Net
 
