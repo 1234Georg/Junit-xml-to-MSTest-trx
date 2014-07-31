@@ -14,12 +14,24 @@ _Generate Chutzpah.3.2.2 JavaScript test report_
 ></exec>
 >  ```
 
-_Convert the test report to trx format using http://www.microsoft.com/en-us/download/details.aspx?id=21714_
+_Convert the test report to trx format using [MSXL.exe](http://www.microsoft.com/en-us/download/details.aspx?id=21714) and the transformation file xslt_Junit_MsUnit included in this repo_
 >  ```xml
 ><exec>
->  <executable>C:\Program Files (x86)\Chutzpah.3.2.2\tools\chutzpah.console.exe</executable>
->  <buildArgs>C:\JavaScriptTests /testMode=JavaScript  /vsoutput /junit >C:\JavaScriptTestResults.xml</buildArgs>
->  <baseDirectory>C:\Projects\JavascriptTests</baseDirectory>
+>  <executable>C:\msxsl.exe</executable>
+>  <buildArgs>C:\JavaScriptTestResults.xml C:\xslt_Junit_MsUnit -o C:\JavaScriptTestResults.trx</buildArgs>
+>  <baseDirectory>C:\</baseDirectory>
 >  <buildTimeoutSeconds>0</buildTimeoutSeconds>
-></exec>
->  ``
+></exec>	
+>  ```
+
+_Merge the reports for a single test report_
+>  ```xml
+><publishers>
+>	<merge>
+>	  <files>
+>	  	<file>C:\JavaScriptTestResults.trx</file>
+>		  <file>C:\MSTestResults.trx</file>>		  
+>	  </files>
+>	</merge>
+></publishers>	
+>  ```
