@@ -31,7 +31,7 @@ _Merge the reports for a single test report_
 >	<merge>
 >	  <files>
 >	  	<file>C:\JavaScriptTestResults.trx</file>
->		  <file>C:\MSTestResults.trx</file>>		  
+>		  <file>C:\MSTestResults.trx</file>	  
 >	  </files>
 >	</merge>
 ></publishers>	
